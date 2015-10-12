@@ -1,34 +1,34 @@
-# CandyCane #
+# CandyCane-Br #
 
-CandyCane is a issue tracking system. The original implementation on which it is based, is [Redmine](http://www.redmine.org)
+CandyCane é um sistema de Gerenciamento de Projeto. A implementação original sobre o qual se baseia, é [Redmine](http://www.redmine.org)
 
-You can view a live demo of CandyCane, as well as the bug tracking for CandyCane here: [http://my.candycane.jp/](http://my.candycane.jp/)
+Você pode ver uma demonstração ao vivo de CandyCane, bem como o acompanhamento de bugs para CandyCane aqui: [http://my.candycane.jp/](http://my.candycane.jp/)
 
-* Continuous Integration is running on here: [https://travis-ci.org/yandod/candycane](https://travis-ci.org/yandod/candycane)
+* Integração Contínua está sendo executado em aqui: [https://travis-ci.org/yandod/candycane](https://travis-ci.org/yandod/candycane)
 [![Build Status](https://travis-ci.org/yandod/candycane.png?branch=master)](https://travis-ci.org/yandod/candycane)
-* Coverage report is genrated at Coverall [![Coverage Status](https://coveralls.io/repos/yandod/candycane/badge.png?branch=master)](https://coveralls.io/r/yandod/candycane)
+* Relatório de cobertura é gerada pelo Coverall [![Coverage Status](https://coveralls.io/repos/yandod/candycane/badge.png?branch=master)](https://coveralls.io/r/yandod/candycane)
 * versioneye [![Dependency Status](https://www.versioneye.com/user/projects/51f0855e632bac469f03892f/badge.png)](https://www.versioneye.com/user/projects/51f0855e632bac469f03892f)
 
-## Installation ##
+## Instalação ##
 
-1. Extract all files, and place into a directory that is accessible to the web server, and able to run PHP.
-2. Setup correct permissions on files and folders:
+1. Extraia todos os arquivos, e coloque em um diretório que seja acessível ao servidor web, e capaz de executar o PHP.
+2. Configuração permissões corretas em arquivos e pastas:
 	* `chmod -R 777 app/Config`
 	* `chmod -R 777 app/files`
 	* `chmod -R 777 app/tmp`
 	* `chmod -R 777 app/Plugin`
-3. Access the site via your web server. If you installed into a subdirectory, then ensure that directory is in your URL: http://mysite.com/candycane
-4. The step-by-step installer will appear.
-5. Just use it!
+3. Acesse o site através do seu servidor web. Se você instalou em um subdiretório, em seguida, garantir que diretório está na sua URL: http://mysite.com/candycane
+4. O instalador passo-a-passo aparece.
+5. Basta usá-lo!
 
-## Development setup ##
+## Configuração de Desenvolvimento ##
 
 1. Install Vagrant and VirtualBox.
 2. Install vagrant-berkshelf plugin.
 	`vagrant plugin install vagrant-berkshelf`
 3. Download candycane box
 	`vagrant box add candycane {url}`
-4. just type `vagrant up`
+4. basta digitar `vagrant up`
 5. ssh into vm
 	`vagrant ssh`
 6. cd to app
@@ -47,28 +47,28 @@ mysql -u root -e "drop database if exists test_candycane;create database test_ca
 ./vendor/bin/phpunit app/Test/Case/Selenium/InstallerTest.php
 ```
 
-## Updating to latest version ##
+## Atualizando a versão mais recente ##
 
-You need to copy these file and directories into extracted latest codes.
-Currently we don't make database schema change.
+Você precisa copiar esses arquivos e diretórios em códigos mais recentes extraídas.
+Atualmente não fazer a mudança de esquema de banco de dados.
 
 - app/Config/database.php
 - app/files
 - app/Plugin
 
 
-## Notes ##
+## Notas ##
 
-Currently some features which are present in Redmine are not supported by CandyCane. These are:
+Atualmente algumas características que estão presentes no Redmine não são suportados pelo CandyCane. Esses são:
 
 - Repository viewer
 - Forum
 - Documents
 
-CandyCane is using CakePHP v2.3.
+CandyCane utiliza CakePHP v2.3.
 
 
-## Contributors
+## Contribuintes
 
 - yandod
 - halt
@@ -100,6 +100,6 @@ CandyCane is using CakePHP v2.3.
 - Hisateru Tanaka
 - [Jose Gonzalez](http://josediazgonzalez.com) (savant)
 
-We will appreciate any pull requests.
+Vamos apreciar todos os pedidos de tração.
 
-I try to merge as much as possible. Please fork the repository if you find something you want to fix, and submit a pull request.
+Eu tento mesclar, tanto quanto possível. Por favor, fork do repositório se você encontrar algo que você quer corrigir, e enviar uma solicitação de recebimento.
