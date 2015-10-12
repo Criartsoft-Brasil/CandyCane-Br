@@ -1,0 +1,31 @@
+## Configuration and Temporary files
+app/tmp/*
+app/files/*
+app/Config/database.php
+app/Config/email.php
+
+## Simpletest
+vendors/simpletest
+
+
+## IDE files and folders
+.cache
+.project
+.settings
+.buildpath
+nbproject
+.idea
+.DS_Store
+
+## Allow 'empty' files
+!empty
+
+## Locale files
+*.mo
+
+## Composer
+composer.phar
+vendor
+
+## build artifacts
+build
